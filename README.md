@@ -66,8 +66,12 @@ $ forge script script/Ping.s.sol:DeployPingPong --rpc-url http://127.0.0.1:8545 
 ```shell
 $ cast <subcommand>
 ```
-cast wallet import devWalletOne --interactive 
+```shell
 cast wallet list
+```
+```shell
+cast wallet import devWalletOne --interactive 
+```
 
 ### Help
 
