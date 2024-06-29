@@ -55,10 +55,18 @@ $ forge script script/CounterScript.s.sol: --rpc-url <your_rpc_url> --private-ke
 ```
 OR
 
-when using with cast private key:
+when using with cast private key to deploy to anvil blockchain:
 
 ```shell
 $ forge script script/Ping.s.sol:DeployPingPong --rpc-url http://127.0.0.1:8545 --account devWalletOne --sender 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 --broadcast -vvvv  
+```
+
+OR
+
+to deploy to temporary anvil blockchain:
+
+```shell
+$ forge script script/Ping.s.sol:DeployPingPong  
 ```
 
 ### Cast
