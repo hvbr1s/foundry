@@ -22,6 +22,8 @@ $ forge build
 ```
 forge create ContractName --interactive
 
+forge clean (to clear build cache)
+
 ### Test
 
 ```shell
@@ -49,15 +51,14 @@ $ anvil
 ### Deploy
 
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+$ forge script script/CounterScript.s.sol: --rpc-url <your_rpc_url> --private-key <your_private_key>
 ```
 OR
 
 when using with cast private key:
 
 ```shell
-$ forge script script/Counter.s.sol:Counter --rpc-url http://127.0.0.1:8545 --account devWallet --sender 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266  --
-broadcast -vvvv   
+$ forge script script/Ping.s.sol:DeployPingPong --rpc-url http://127.0.0.1:8545 --account devWalletOne --sender 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 --broadcast -vvvv  
 ```
 
 ### Cast
