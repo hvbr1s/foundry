@@ -80,6 +80,11 @@ To convert hex to dec:
 ```shell
 cast --to-base 0x8 dec
 ```
+To interact with a smart contract function:
+
+```shell
+cast send 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512 "ping()" --rpc-url http://127.0.0.1:8545 --account devWalletOne
+```
 
 To cast a private key:
 
@@ -90,7 +95,7 @@ cast wallet import walletName --interactive
 cast wallet list
 ```
 ```shell
-$ forge script script/Ping.s.sol:DeployPingPong --rpc-url http://127.0.0.1:8545 --account walletName --sender <walletPubKey> --broadcast -vvvv  
+$ forge script script/Ping.s.sol:DeployPingPong --rpc-url http://127.0.0.1:8545 --account devWalletOne --sender 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 --broadcast -vvvv  
 ```
 Check wallet keystore (from home directory):
 ```shell
