@@ -66,11 +66,16 @@ $ forge script script/Ping.s.sol:DeployPingPong --rpc-url http://127.0.0.1:8545 
 ```shell
 $ cast <subcommand>
 ```
+To cast a private key:
+
+```shell
+cast wallet import walletName --interactive
+```
 ```shell
 cast wallet list
 ```
 ```shell
-cast wallet import devWalletOne --interactive 
+$ forge script script/Ping.s.sol:DeployPingPong --rpc-url http://127.0.0.1:8545 --account walletName --sender <walletPubKey> --broadcast -vvvv  
 ```
 
 ### Help
