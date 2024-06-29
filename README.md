@@ -81,6 +81,13 @@ Check wallet keystore (from home directory):
 ```shell
 cd .foundry/keystores/
 ```
+Clean bash history:
+```shell
+history -c
+```
+```shell
+rm .bash_history
+```
 
 ### Help
 
