@@ -77,6 +77,10 @@ cast wallet list
 ```shell
 $ forge script script/Ping.s.sol:DeployPingPong --rpc-url http://127.0.0.1:8545 --account walletName --sender <walletPubKey> --broadcast -vvvv  
 ```
+Check wallet keystore (from home directory):
+```shell
+cd .foundry/keystores/
+```
 
 ### Help
 
