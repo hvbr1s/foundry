@@ -2,14 +2,15 @@
 pragma solidity ^0.8.13;
 
 import {Script, console} from "forge-std/Script.sol";
-import "../src/Ping.sol";
+import {Ping} from "../src/Ping.sol";
 
 contract DeployPingPong is Script {
     function setUp() public {}
 
-    function run() public {
+    function run() external returns (Ping) {
         vm.startBroadcast();
-        new Ping();
+        Ping pingPong = new Ping();
         vm.stopBroadcast();
+        return pingPong;
     }
 }
