@@ -74,6 +74,13 @@ $ forge script script/Ping.s.sol:DeployPingPong
 ```shell
 $ cast <subcommand>
 ```
+
+To convert hex to dec:
+
+```shell
+cast --to-base 0x8 dec
+```
+
 To cast a private key:
 
 ```shell
